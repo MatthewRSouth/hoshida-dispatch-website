@@ -1,4 +1,28 @@
+:root {
+    --primary-color: #2c426e;
+}
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+}
+header {
+    background-color: var(--primary-color);
+    height: 4rem;
+    margin-top: 0;
+}
+.hamburger-menu {
+    width: 40px;
 }

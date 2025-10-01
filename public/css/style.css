@@ -1,5 +1,12 @@
 :root {
-    --primary-color: #2c426e;
+    --primary-color-light: hsl(220, 43%, 40%);
+    --primary-color: hsl(220, 43%, 30%);
+    --primary-color-dark: hsl(220, 43%, 20%);
+    --secondary-color-light: hsl(24, 87%, 67%);
+    --secondary-color: hsl(24, 87%, 57%);
+    --secondary-color-dark: hsl(24, 87%, 47%);
+    --text-color: #555;
+    --background-color: #fff;
 }
 
 * {
@@ -11,12 +18,69 @@
 body {
     font-family: 'poppins', sans-serif;
 }
+.off-screen-menu {
+    background-color: var(--primary-color-dark);
+    height: 100vh;
+    width: 100%;
+    max-width: 60%;
+    position: fixed;
+    top: 0;
+    right: -60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    transition: 0.3s ease;
+    opacity: 80%;
+}
+.off-screen-menu.active {
+    right: 0;
+}
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, 50%) rotate(-45deg);
+}
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
     color: white;
+}
+ul {
+    list-style-type: none;
 }
 header {
     background-color: var(--primary-color);

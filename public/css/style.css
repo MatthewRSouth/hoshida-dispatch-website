@@ -34,6 +34,7 @@ body {
     font-size: 2rem;
     transition: 0.3s ease;
     opacity: 80%;
+    z-index: 2;
 }
 .off-screen-menu.active {
     right: 0;
@@ -42,7 +43,9 @@ body {
     height: 50px;
     width: 50px;
     margin-left: auto;
+    margin-right: 2rem;
     position: relative;
+    top: 5px;
 }
 .ham-menu span {
     height: 5px;
@@ -54,6 +57,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s ease;
+    z-index: 3;
 }
 .ham-menu span:nth-child(1) {
     top: 25%;
@@ -70,7 +74,7 @@ body {
 }
 .ham-menu.active span:nth-child(3) {
     top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
 .navbar {
     display: flex;
@@ -87,9 +91,33 @@ header {
     height: 4rem;
     margin-top: 0;
 }
-.hamburger-menu {
-    width: 40px;
-}
+
 .hoshida-logo {
     height: 40px;
+    margin-left: 1rem;
+    margin-top: 10px;
+}
+.hero-container {
+    position: relative;
+}
+.hero-background-image {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -999;
+    opacity: 70%;
+}
+.hero-content {
+    position: relative;
+    color: white;
+    top: 120px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+    max-width: 800px;
+    z-index: 1;
+    font-size: 0.7rem;
 }

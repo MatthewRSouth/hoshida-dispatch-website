@@ -22,19 +22,19 @@ body {
     background-color: var(--primary-color-dark);
     height: 100vh;
     width: 100%;
-    max-width: 60%;
+    max-width: 40%;
     position: fixed;
     top: 0;
-    right: -60%;
+    right: -40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
     font-size: 2rem;
     transition: 0.3s ease;
     opacity: 80%;
-    z-index: 2;
+    z-index: 5;
 }
 .off-screen-menu.active {
     right: 0;
@@ -57,7 +57,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: 0.3s ease;
-    z-index: 3;
+    z-index: 5;
 }
 .ham-menu span:nth-child(1) {
     top: 25%;
@@ -85,6 +85,11 @@ body {
 }
 ul {
     list-style-type: none;
+    margin-top: 100px;
+}
+.nav-item {
+    font-size: 1.5rem;
+    padding: 6px;
 }
 header {
     background-color: var(--primary-color);
@@ -100,6 +105,9 @@ header {
 .hero-container {
     position: relative;
     height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
 }
 .hero-background-image {
     height: 200px;
@@ -113,23 +121,25 @@ header {
 }
 .hero-content {
     position: relative;
-    color: white;
     top: 10px;
     text-align: center;
     padding: 20px;
-    margin-left: 20px;
     max-width: 800px;
-    z-index: 1;
+    z-index: 2;
     font-size: 0.7rem;
+    display: flex;
 }
 .cta-container {
     height: 100px;
+    flex-direction: column;
     position: relative;
     display: flex;
     justify-content: center;
     text-align: center;
     font-size: 16px;
-    color: #f2f0ef;
+    bottom: 15px;
+    color: white;
+    z-index: 2;
 }
 
 .japanese {
@@ -137,4 +147,30 @@ header {
     font-weight: 400;
     font-optical-sizing: auto;
     font-style: normal;
+}
+.cta-button {
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 5px;
+    padding: 0 10px 0 10px;
+    text-align: center;
+    background-color: var(--secondary-color-dark);
+    color: white;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: none;
+}
+.cta-button:hover {
+    background-color: var(--secondary-color-light);
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    /* Black with 50% transparency. Adjust the last number (0.5) to make it darker or lighter. */
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1; /* Make sure it's on top of the image */
 }

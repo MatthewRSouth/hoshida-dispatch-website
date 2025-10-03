@@ -48,8 +48,8 @@ body {
     top: 5px;
 }
 .ham-menu span {
-    height: 5px;
-    width: 100%;
+    height: 3px;
+    width: 80%;
     background-color: var(--secondary-color);
     border-radius: 25px;
     position: absolute;
@@ -148,6 +148,11 @@ header {
     font-optical-sizing: auto;
     font-style: normal;
 }
+.english {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 .cta-button {
     height: 30px;
     border-radius: 10px;
@@ -188,9 +193,6 @@ header {
     border-radius: 8px;
     position: relative;
 }
-.cta-modal.active {
-    display: contents;
-}
 .cta-modal.hidden {
     display: none;
 }
@@ -215,4 +217,12 @@ header {
 .testimonial-header {
     color: var(--primary-color);
     margin: 10px;
+}
+.testimonial-img {
+    height: 150px;
+}
+.testimonial-text {
+    font-size: 9px;
+    text-align: center;
+    padding: 20px;
 }

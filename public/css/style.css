@@ -231,7 +231,7 @@ header {
     display: grid;
     grid-template-columns: repeat(1fr, 5);
     grid-template-rows: repeat(1fr, 5);
-    height: 200px;
+    height: 250px;
     justify-content: center;
     margin-top: 20px;
 }
@@ -255,7 +255,10 @@ header {
     margin: 10px;
 }
 .staff-card-title {
-    font-size: 16px;
+    font-size: 10px;
+}
+.staff-card-name {
+    font-size: 10px;
 }
 .staff-card-description {
     font-size: 9px;

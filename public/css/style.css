@@ -102,6 +102,15 @@ header {
     margin-left: 1rem;
     margin-top: 10px;
 }
+.logo-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    /* Black with 50% transparency. Adjust the last number (0.5) to make it darker or lighter. */
+    z-index: 1; /* Make sure it's on top of the image */
+}
 .hero-container {
     position: relative;
     height: 100px;

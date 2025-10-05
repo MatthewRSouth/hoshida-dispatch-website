@@ -252,9 +252,9 @@ header {
 .swiper {
     width: 100%;
     height: fit-content;
-    --swiper-navigation-color: var(--secondary-color);
+    --swiper-navigation-color: white;
     --swiper-navigation-size: 30px;
-    --swiper-pagination-color: var(--secondary-color);
+    --swiper-pagination-color: white;
 }
 
 .swiper-slide img {

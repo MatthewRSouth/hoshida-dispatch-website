@@ -228,6 +228,7 @@ header {
 .introduction-content {
     font-size: 14px;
     padding: 0 20px;
+    color: var(--text-color);
 }
 .slide-show-container {
     height: 200px;
@@ -246,6 +247,7 @@ header {
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    color: var(--text-color);
 }
 .testimonial-header {
     color: var(--primary-color);
@@ -269,6 +271,7 @@ header {
     align-items: start;
     margin-top: 20px;
     padding: 20px; /* Add some padding around the container */
+    color: var(--text-color);
 }
 .staff-header {
     color: var(--primary-color);

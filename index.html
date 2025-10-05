@@ -11,6 +11,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
         <title japanese>Hoshida Dispatch Website</title japanese>
     </head>
     <body>
@@ -62,8 +65,27 @@
                     </p>
                 </div>
             </section>
-            <section class='slide-show-container'>
-                <h1 class='english'>slideshow of pictures</h1>
+            <section>
+                <div class='slide-show-container'>
+                    <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><img src="public/images/Harry.png" class='harry'></div>
+                      <div class="swiper-slide"><img src="public/images/field-trip.PNG"></div>
+                      <div class="swiper-slide pe"><img src="public/images/math.PNG"></div>
+                      <div class="swiper-slide"><img src="public/images/pe.PNG"></div>
+                      <div class="swiper-slide"><img src="public/images/potatoe.PNG"></div>
+                    </div>                      
+ 
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
             </section>
             <section class='testimonial-container'>
                 <h2 class='testimonial-header english'>Testimonials</h2>
@@ -145,6 +167,9 @@
             <h2 class='footer-text english'>©2021 Hoshida International</h2>
 
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <script src="public/js/index.js"></script>
+
     </body>
-    <script src="public/js/index.js"></script>
+
 </html>

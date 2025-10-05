@@ -237,12 +237,44 @@ header {
     color: var(--text-color);
 }
 .slide-show-container {
-    height: 200px;
+    height: 300px;
+    width: 100%;
     background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.swiper {
+    width: 100%;
+    height: fit-content;
+    --swiper-navigation-color: var(--secondary-color);
+    --swiper-navigation-size: 30px;
+    --swiper-pagination-color: var(--secondary-color);
+}
+
+.swiper-slide img {
+    width: 70%;
+    display: block;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    margin-left: 60px;
+    border-radius: 20px;
+}
+.swiper-slide img .harry {
+    border-radius: 20px;
+}
+.swiper-button-prev {
+    color: white;
+    z-index: 100;
+}
+.swiper-button-next {
+    color: white;
+    z-index: 100;
 }
 
 .testimonial-container {

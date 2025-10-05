@@ -70,10 +70,17 @@ ctaModal.addEventListener('click', function (e) {
 const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 4000,
+        disableOnInteraction: false,
     },
+    effect: 'fade',
+    fadeEffect: {
+        crossFade: true,
+    },
+
     pagination: {
         el: '.swiper-pagination',
+        clickable: true,
     },
 
     navigation: {

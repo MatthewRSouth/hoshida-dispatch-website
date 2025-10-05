@@ -255,6 +255,7 @@ header {
     --swiper-navigation-color: white;
     --swiper-navigation-size: 30px;
     --swiper-pagination-color: white;
+    transition: 1s ease;
 }
 
 .swiper-slide img {

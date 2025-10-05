@@ -226,6 +226,9 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 .introduction-header {
     color: var(--primary-color);
@@ -237,7 +240,7 @@ header {
     color: var(--text-color);
 }
 .slide-show-container {
-    height: 300px;
+    /* height: 300px; */
     width: 100%;
     background-color: var(--primary-color);
     display: flex;
@@ -248,27 +251,29 @@ header {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 4rem 0;
 }
 .swiper {
-    width: 100%;
+    width: 90%;
+    max-width: 1000px;
     height: fit-content;
+    border-radius: 15px;
     --swiper-navigation-color: white;
     --swiper-navigation-size: 30px;
     --swiper-pagination-color: white;
-    transition: 1s ease;
+    overflow: hidden;
+}
+.swiper-slide {
+    aspect-ratio: 4/3;
 }
 
 .swiper-slide img {
-    width: 70%;
+    width: 100%;
+    height: 100%;
     display: block;
-    aspect-ratio: 4/3;
     object-fit: contain;
-    margin-left: 60px;
-    border-radius: 20px;
 }
-.swiper-slide img .harry {
-    border-radius: 20px;
-}
+
 .swiper-button-prev {
     color: white;
     z-index: 100;
@@ -394,4 +399,12 @@ header {
     font-size: 10px;
     color: white;
     padding: 10px;
+}
+
+/* --- MEDIA QUERY FOR DESKTOP --- */
+@media (min-width: 768px) {
+    .swiper-slide {
+        /* On wider screens, use a more panoramic aspect ratio */
+        aspect-ratio: 16 / 9;
+    }
 }

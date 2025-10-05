@@ -90,11 +90,16 @@ ul {
 .nav-item {
     font-size: 1.5rem;
     padding: 6px;
+    cursor: pointer;
 }
 header {
     background-color: var(--primary-color);
     height: 4rem;
     margin-top: 0;
+    position: sticky; /* This makes the header stick */
+    top: 0; /* It will stick to the very top of the viewport */
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 10; /* Make sure it stays on top of other content */
 }
 
 .hoshida-logo {

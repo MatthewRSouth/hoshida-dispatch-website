@@ -286,12 +286,19 @@ header {
 .testimonial-container {
     height: auto;
     width: 100%;
-    display: flex;
+
     align-items: center;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
+
     color: var(--text-color);
+}
+.testimonial-content {
+    display: flex;
+    flex-direction: column; /* Default to a single column for mobile */
+    align-items: center; /* Center items vertically in the column */
+    gap: 2rem; /* Add space between the items */
+    padding: 1rem; /* Add some space around the content */
 }
 .testimonial-header {
     color: var(--primary-color);
@@ -304,6 +311,7 @@ header {
     font-size: 12px;
     text-align: center;
     padding: 20px;
+    max-width: 700px;
 }
 .staff-container {
     display: grid;
@@ -343,6 +351,7 @@ header {
 }
 .staff-card-description {
     font-size: 12px;
+    max-width: 500px;
 }
 .pricing-container {
     height: 250px;
@@ -406,5 +415,85 @@ header {
     .swiper-slide {
         /* On wider screens, use a more panoramic aspect ratio */
         aspect-ratio: 16 / 9;
+    }
+}
+/* --- MEDIA QUERY FOR DESKTOP --- */
+@media (min-width: 1024px) {
+    /* This targets screens 1024px and wider */
+    .testimonial-content {
+        /* Change the direction from column to row */
+        flex-direction: row;
+
+        /* Add a gap for spacing between the cards */
+        gap: 5rem;
+        align-items: flex-start; /* Align items to the top in a row */
+        justify-content: center;
+    }
+
+    .testimonial {
+        /* It's good practice to set a base width for the items */
+        flex-basis: 300px;
+    }
+    .hero-content {
+        font-size: 1.9rem;
+    }
+    .introduction-content {
+        font-size: 1.3rem;
+        max-width: 1000px;
+    }
+    .cta-container {
+        font-size: 1.3rem;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .hero-background-image {
+        height: 235px;
+    }
+    .hero-overlay {
+        height: 235px;
+    }
+    .cta-button {
+        height: 4rem;
+        width: 18rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: 1.2rem;
+    }
+    .testimonial-title {
+        font-size: 1.4rem;
+    }
+    .testimonial-text {
+        font-size: 1.2rem;
+    }
+    .testimonial-img {
+        height: 350px;
+    }
+    .header {
+        font-size: 3rem;
+    }
+    .staff-card p {
+        font-size: 1.2rem;
+    }
+    .staff-card .staff-card-name {
+        font-size: 1.2rem;
+    }
+    .staff-card .staff-card-title {
+        font-size: 1.2rem;
+    }
+    .pricing-container {
+        height: 400px;
+        padding: 30px;
+        margin: 50px 0 30px 0;
+    }
+    .cta-2-container {
+        margin: 90px 0 30px 0;
+        font-size: 1.4rem;
+    }
+    .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        align-items: center;
+        padding: 0;
     }
 }

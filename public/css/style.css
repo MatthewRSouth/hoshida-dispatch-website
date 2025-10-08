@@ -384,8 +384,9 @@ header {
 }
 .cta-phone-number {
     color: var(--primary-color);
-    margin: 20px;
+    margin: 30px;
     text-decoration: none;
+    padding-bottom: 40px;
 }
 .cta-phone-number a {
     text-decoration: none;
@@ -434,8 +435,15 @@ header {
         /* It's good practice to set a base width for the items */
         flex-basis: 300px;
     }
+    .hero-container {
+        height: 300px;
+    }
     .hero-content {
         font-size: 1.9rem;
+    }
+    .introduction-container {
+        margin-top: 180px;
+        m
     }
     .introduction-content {
         font-size: 1.3rem;
@@ -447,10 +455,10 @@ header {
         margin-bottom: 0;
     }
     .hero-background-image {
-        height: 235px;
+        height: 600px;
     }
     .hero-overlay {
-        height: 235px;
+        height: 600px;
     }
     .cta-button {
         height: 4rem;

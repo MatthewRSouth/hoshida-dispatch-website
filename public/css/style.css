@@ -149,7 +149,7 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     bottom: 15px;
     color: white;
     z-index: 2;
@@ -377,10 +377,11 @@ header {
     justify-content: center;
     height: 200px;
     position: relative;
-    top: 10px;
+    top: 40px;
 }
 .cta-2-header {
     color: var(--primary-color);
+    margin: 10px;
 }
 .cta-phone-number {
     color: var(--primary-color);
@@ -443,7 +444,6 @@ header {
     }
     .introduction-container {
         margin-top: 180px;
-        m
     }
     .introduction-content {
         font-size: 1.3rem;
@@ -494,14 +494,18 @@ header {
         margin: 50px 0 30px 0;
     }
     .cta-2-container {
-        margin: 90px 0 30px 0;
+        margin: 50px 0 50px 0;
         font-size: 1.4rem;
     }
     .footer-container {
+        width: 100vw;
         flex-direction: column;
         justify-content: center;
         margin: 0;
         align-items: center;
         padding: 0;
+    }
+    .footer-text {
+        margin-left: 27px;
     }
 }
